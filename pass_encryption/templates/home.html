@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}"/>
+    </head>
+    <body>
+        <div className='App'>
+            <form className='form' id='form'>
+              <div className='heads' id='heads'>
+                <h2>Password Encrypter</h2>
+              </div>
+        
+              <div className='form-group' id='form-group'>
+                <input type='text' name='pass' id='name' placeholder='Password'>
+              </div>
+        
+              <div className='form-group-form-button' id='form-group-form-button'>
+                <button type='submit' name='encrypt' id='encrypt' value='Encrypt' onClick={refreshPage}>Encrypt</button>
+              </div>
+            </form>
+            <div className='data' id='data'>
+            </div>
+            </div>
+    </body>
+</html>
